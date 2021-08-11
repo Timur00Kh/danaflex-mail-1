@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Invoices or receipts</title>
+    <style type="text/css">
+            {{styleString}}
+    </style>
+</head>
+<body>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td align="center">
+    {{#> container}}
+        <tr>
+            <td style="text-align: center;">
+                <h1 class="main-header">эко-конференция</h1>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <div class="card" style="padding-top: 40px; padding-bottom: 45px;">
+                    <table align="center">
+                        <tr align="center">
+                            <td style="max-width: 288px" align="center">
+                                <p><b>Здравствуйте, {{firstName}} {{lastName}}</b></p>
+                                <p>Приглашаем Вас на партнерскую конференцию от компании Danaflex по
+                                    устойчивому развитию.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="padding-top: 28px">
+                        {{#> grid/row}}
+                            {{#> grid/col percent=50 maxWidth=530}}
+                                <p class="subtext" style="">Казань, ул. Восстания
+                                    142</p>
+                            {{/grid/col}}
+                            {{#> grid/col percent=50 maxWidth=530}}
+                                <p class="subtext" style="">17. 09. 2021 11:00</p>
+                            {{/grid/col}}
+                        {{/grid/row}}
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a
+                        href="{{links.signup}}"
+                        class="signup-btn"
+                        style="display: block;margin-top: -14px">
+                    Регистрация
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <div style="max-width: 390px; margin-top: 80px; margin-bottom: 50px">
+                    <p class="main-text">
+                        Сейчас перед многими компаниями особо остро стоит задача по переходу на полностью
+                        экологичное производство. И по своему опыту мы знаем сколько возникает
+                        сложностей на этом пути.
+                    </p>
+                    <p class="main-text">
+                        Это стало отправной точкой, чтобы собраться вместе и обсудить насущные для
+                        нашей отрасли вызовы, посмотреть на экологию под другим углом. А самое главное —
+                        увидеть возможности, которые существуют уже сегодня.
+                    </p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <table align="center">
+                    <tr align="center">
+                        <td style="max-width: 430px" align="center">
+                            <h1 class="second-header">Давайте менять мир вместе</h1>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    {{/container}}
+    </td>
+    </tr>
+</table>
+</body>
+</html>
