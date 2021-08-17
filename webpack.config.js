@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -29,9 +30,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [new HtmlWebpackPlugin()],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000,
+    port: 9001,
   },
 }
