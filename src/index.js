@@ -32,7 +32,37 @@ const data = {
     neededVar
 }
 
-const hbsResult = template(data)
-const cssInlined = juice(hbsResult)
 
-document.documentElement.innerHTML = cssInlined
+
+document.getElementById('main-form').addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log(e);
+    const hbsResult = template({
+        ...data,
+        links: {
+            ...data.links,
+            signup: document.getElementById("signup").value
+        }
+    })
+    const cssInlined = juice(hbsResult)
+    download('danaflex-email.html', cssInlined);
+})
+
+function download(filename, text) {
+    const element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+}
+
+if (window.location.href.indexOf('preview') > -1) {
+    const hbsResult = template(data)
+    const cssInlined = juice(hbsResult)
+    document.documentElement.innerHTML = cssInlined
+}

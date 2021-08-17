@@ -33,7 +33,9 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    template: 'src/main.hbs'
+  })],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
