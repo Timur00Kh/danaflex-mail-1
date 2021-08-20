@@ -27,7 +27,7 @@ const data = {
         }
     },
     links: {
-        signup: 'https://timurkh.ru'
+        signup: 'https://event-danaflex.com/'
     },
     neededVar
 }
