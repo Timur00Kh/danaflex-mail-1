@@ -34,29 +34,32 @@
         </tr>
         <tr>
             <td style="text-align: center;">
-                <div class="card" style="padding-top: 40px; padding-bottom: 45px;">
-                    <table align="center">
-                        <tr align="center">
-                            <td style="max-width: 288px" align="center">
-                                <p><b>Здравствуйте! {{firstName}} {{lastName}}</b></p>
-                                <p style="margin-bottom: 0px">Приглашаем Вас на партнерскую конференцию от компании
-                                    Danaflex по
-                                    устойчивому развитию.</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <div style="padding-top: 28px">
-                        {{#> grid/row}}
-                            {{#> grid/col percent=50 maxWidth=450}}
-                                <p class="subtext" style="margin-bottom: 8px">Казань, ул.Восстания 142 <br>
-                                    офис Danaflex</p>
-                            {{/grid/col}}
-                            {{#> grid/col percent=50 maxWidth=450}}
-                                <p class="subtext" style="">20.09.2021 11:00</p>
-                            {{/grid/col}}
-                        {{/grid/row}}
+                {{#> center}}
+                    <div class="card" style="padding-top: 40px; padding-bottom: 45px;">
+                        <table align="center">
+                            <tr align="center">
+                                <td style="max-width: 288px" align="center">
+                                    <p><b>Здравствуйте! {{firstName}} {{lastName}}</b></p>
+                                    <p style="margin-bottom: 0px">Приглашаем Вас на партнерскую конференцию от
+                                        компании
+                                        Danaflex по
+                                        устойчивому развитию.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="padding-top: 28px">
+                            {{#> grid/row}}
+                                {{#> grid/col percent=50 maxWidth=450}}
+                                    <p class="subtext" style="margin-bottom: 8px">Казань, ул.Восстания 142 <br>
+                                        офис Danaflex</p>
+                                {{/grid/col}}
+                                {{#> grid/col percent=50 maxWidth=450}}
+                                    <p class="subtext" style="">20.09.2021 11:00</p>
+                                {{/grid/col}}
+                            {{/grid/row}}
+                        </div>
                     </div>
-                </div>
+                {{/center}}
             </td>
         </tr>
         <tr>
@@ -98,66 +101,70 @@
         </tr>
         <tr>
             <td style="text-align: center;">
-                <div class="card" style="padding-bottom: 60px; padding-top: 60px; margin-top: 85px">
-                    <h3 class="card-header" style="margin-bottom: 40px;">Что будет интересного</h3>
+                {{#> center}}
+                    <div class="card" style="padding-bottom: 60px; padding-top: 60px; margin-top: 85px">
+                        <h3 class="card-header" style="margin-bottom: 40px;">Что будет интересного</h3>
+                        <div class="second-card-row">
+                            {{#> grid/row}}
+                                {{#> grid/col percent=10 maxWidth=350}}
+                                    {{#> li}}1{{/li}}
+                                {{/grid/col}}
+                                {{#> grid/col percent=90 maxWidth=350}}
+                                    <p class="li-text" style="">Выступления от специалистов из разных индустрий в
+                                        необычном
+                                        формате</p>
+                                {{/grid/col}}
+                            {{/grid/row}}
+                        </div>
 
-                    <div class="second-card-row">
-                        {{#> grid/row}}
-                            {{#> grid/col percent=10 maxWidth=350}}
-                                {{#> li}}1{{/li}}
-                            {{/grid/col}}
-                            {{#> grid/col percent=90 maxWidth=350}}
-                                <p class="li-text" style="">Выступления от специалистов из разных индустрий в необычном
-                                    формате</p>
-                            {{/grid/col}}
-                        {{/grid/row}}
-                    </div>
+                        <div class="second-card-row">
+                            {{#> grid/row}}
+                                {{#> grid/col percent=10 maxWidth=350}}
+                                    {{#> li}}2{{/li}}
+                                {{/grid/col}}
+                                {{#> grid/col percent=90 maxWidth=350}}
+                                    <p class="li-text" style="">Обсуждение ключевых проблем, инсайтов, наработок в
+                                        области
+                                        экологичного мира и бизнеса</p>
+                                {{/grid/col}}
+                            {{/grid/row}}
+                        </div>
+                        <div class="second-card-row">
+                            {{#> grid/row}}
+                                {{#> grid/col percent=10 maxWidth=350}}
+                                    {{#> li}}3{{/li}}
+                                {{/grid/col}}
+                                {{#> grid/col percent=90 maxWidth=350}}
+                                    <p class="li-text" style="">Обмен опытом и полезные знакомства с экспертами по
+                                        устойчивому развитию передовых компаний </p>
+                                {{/grid/col}}
+                            {{/grid/row}}
+                        </div>
+                        <div class="second-card-row">
+                            {{#> grid/row}}
+                                {{#> grid/col percent=10 maxWidth=350}}
+                                    {{#> li}}4{{/li}}
+                                {{/grid/col}}
+                                {{#> grid/col percent=90 maxWidth=350}}
+                                    <p class="li-text" style="">Экскурсия по заводу Danaflex, где вы увидите весь
+                                        процесс
+                                        создания полностью перерабатываемых решений</p>
+                                {{/grid/col}}
+                            {{/grid/row}}
+                        </div>
+                        <div class="second-card-row">
+                            {{#> grid/row}}
+                                {{#> grid/col percent=10 maxWidth=350}}
+                                    {{#> li}}5{{/li}}
+                                {{/grid/col}}
+                                {{#> grid/col percent=90 maxWidth=350}}
+                                    <p class="li-text" style="">Неформальный бизнес ужин </p>
+                                {{/grid/col}}
+                            {{/grid/row}}
+                        </div>
 
-                    <div class="second-card-row">
-                        {{#> grid/row}}
-                            {{#> grid/col percent=10 maxWidth=350}}
-                                {{#> li}}2{{/li}}
-                            {{/grid/col}}
-                            {{#> grid/col percent=90 maxWidth=350}}
-                                <p class="li-text" style="">Обсуждение ключевых проблем, инсайтов, наработок в области
-                                    экологичного мира и бизнеса</p>
-                            {{/grid/col}}
-                        {{/grid/row}}
                     </div>
-                    <div class="second-card-row">
-                        {{#> grid/row}}
-                            {{#> grid/col percent=10 maxWidth=350}}
-                                {{#> li}}3{{/li}}
-                            {{/grid/col}}
-                            {{#> grid/col percent=90 maxWidth=350}}
-                                <p class="li-text" style="">Обмен опытом и полезные знакомства с экспертами по
-                                    устойчивому развитию передовых компаний </p>
-                            {{/grid/col}}
-                        {{/grid/row}}
-                    </div>
-                    <div class="second-card-row">
-                        {{#> grid/row}}
-                            {{#> grid/col percent=10 maxWidth=350}}
-                                {{#> li}}4{{/li}}
-                            {{/grid/col}}
-                            {{#> grid/col percent=90 maxWidth=350}}
-                                <p class="li-text" style="">Экскурсия по заводу Danaflex, где вы увидите весь процесс
-                                    создания полностью перерабатываемых решений</p>
-                            {{/grid/col}}
-                        {{/grid/row}}
-                    </div>
-                    <div class="second-card-row">
-                        {{#> grid/row}}
-                            {{#> grid/col percent=10 maxWidth=350}}
-                                {{#> li}}5{{/li}}
-                            {{/grid/col}}
-                            {{#> grid/col percent=90 maxWidth=350}}
-                                <p class="li-text" style="">Неформальный бизнес ужин </p>
-                            {{/grid/col}}
-                        {{/grid/row}}
-                    </div>
-
-                </div>
+                {{/center}}
             </td>
         </tr>
         <tr>
